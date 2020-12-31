@@ -1,0 +1,130 @@
+// Mobile
+@media screen and (min-width: 200px) {
+  
+    body{
+        background: #000;
+    }
+  
+    .iphone {
+        display: none;
+    }
+  
+    .app {
+        text-align: center;
+        margin: 1em;
+  
+        &-title {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+        padding: 0 1rem;
+        margin-bottom: 0;
+        }
+  
+        &-subtitle {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+            padding: 0 1rem;
+            margin-top: 0;
+        }
+  
+        &-github {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding:.7rem 2rem;
+            background: white;
+            border: none;
+            border-radius: 100px;
+            transition: .2s;
+            outline: none;
+            margin: 2rem auto;
+            
+            &:hover {
+                background: darken(#FFF, 8%);
+            }
+        }
+  
+        &-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            background: rgb(90, 226, 120);
+            border: none;
+            border-radius: 5px;
+            padding:.7rem 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0 auto;
+            text-align: right;
+            outline: none;
+    
+            &-arrow {
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+  
+    html {
+        background: #1FA550;
+        margin: 0;
+        padding: 0;
+    }
+  
+    body {
+        background: transparent;
+        padding-top: 2rem;
+        margin: 0;
+        height: 100vh;
+    }
+  
+    .iphone {
+        width: 350px;
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 75px;
+    }
+  
+    .app {
+        position: relative;
+        width: 500px;
+        margin: auto;
+        zoom: 90%;
+  
+        &-content {
+            padding-top: 2.5rem;
+            position: relative;
+            width: 340px;
+            height: 710px;
+            z-index: 1;
+            top: 10px;
+            left: 80px;
+            border-radius: 25px;
+        }
+  
+        &-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: .5rem;
+        }
+  
+        &-button {
+            font-size: .8rem;
+        }
+  
+        &-github {
+            margin: 2rem 0;
+        }
+    }
+}
