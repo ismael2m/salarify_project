@@ -1,0 +1,155 @@
+// Mobile
+@media screen and (min-width: 200px) {
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        margin: 3rem auto 0;
+        padding: 1rem .5rem;
+        
+        &-statut {
+            display: flex;
+            padding: .4rem 0;
+            justify-content: space-between;
+            
+            &-check {
+                color: rgb(90, 226, 120);
+                margin-right: .4rem;
+                font-size: 1.3rem; 
+            }
+
+            &-title {
+                color: white; 
+                margin-bottom: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 1.3rem; 
+                margin: 0 .5rem 0 0;
+            }
+
+            &-infos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .85rem;
+                
+                &-text {
+                    color:  rgb(167, 167, 167);
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    vertical-align: baseline;
+                }
+            }  
+        }
+
+        &-label {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem;
+            text-align: start;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-weight: 500;
+            
+            &-wrap{
+                display: flex;
+                align-items: center;
+
+                &-input {
+                    padding: .6rem .5rem ;
+                    margin-top: .5rem;
+                    width: 100%;
+                    border: none;
+                    border-radius: 3px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    background: rgb(26, 26, 26);
+                    color: white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &-euro {
+                    margin-left: 1rem;
+                    margin-top: .8rem;
+                    font-size: 1.5rem;
+                }
+            }           
+        }
+
+        &-reset {
+            font-family: 'Roboto', sans-serif;
+            font-size: .9rem;
+            font-weight: 500;
+            background: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: .4rem;
+            outline: none;
+            width: 90%;
+            margin: 1rem auto;
+        }
+    }
+} 
+
+// Tablet
+@media screen and (min-width: 768px) {
+    .form {
+        width: 450px;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    
+    .form {
+        margin-top: 1.7rem;
+        width: initial;
+        padding: .8rem;
+        
+        &-statut {
+            justify-content: space-around;
+            align-items: center;
+
+            &-title {
+                font-size: .9rem;
+            }
+
+            &-check {
+                font-size: 1rem;
+            }
+
+            &-infos {
+                font-size: .6rem;
+            }
+        }
+
+        &-label {
+            font-size: .8rem;
+            padding-left: .5rem;
+        
+            &-wrap {
+                padding-right: 0 2.5rem;
+    
+                &-input {
+                    padding: .3rem .3rem;
+                    font-size: 1.2rem;
+                }
+
+                &-euro {
+                    font-size: .9rem;
+                    margin: .6rem .5rem 0;
+
+                }
+            }
+        }
+
+        &-reset {
+            font-size: .75rem;
+        }
+    }
+}
