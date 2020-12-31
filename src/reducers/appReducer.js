@@ -12,14 +12,12 @@ const SWITCH_FORM = 'SWITCH_FORM'
 export const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case SWITCH_FORM:
-    {
       return {
         ...state,
         form: action.form,
         taux: action.taux,
         calc: action.calc
       }
-    }
 
     default:
       return state
