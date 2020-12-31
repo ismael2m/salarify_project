@@ -76,7 +76,8 @@ const SalaryForm = ({ form, taux, calc }) => {
       <button
         className='form-reset'
         onClick={() => dispatch({ type: 'ERASE_FORM' })}
-      >Réinitialiser
+      >
+        Réinitialiser
       </button>
     </div>
   )
