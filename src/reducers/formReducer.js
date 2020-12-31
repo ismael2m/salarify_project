@@ -85,7 +85,6 @@ export const reducer = (state = initialState, action = {}) => {
     }
 
     case ERASE_FORM:
-    {
       return {
         ...state,
         brutAn: 0,
@@ -93,7 +92,6 @@ export const reducer = (state = initialState, action = {}) => {
         brutMens: 0,
         netMens: 0
       }
-    }
 
     default:
       return state
