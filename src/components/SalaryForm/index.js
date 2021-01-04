@@ -1,5 +1,6 @@
 // Import React
 import React, { useEffect, useReducer } from 'react'
+import PropTypes from 'prop-types'
 
 // React icons
 import { FaCheckCircle } from 'react-icons/fa'
@@ -81,6 +82,12 @@ const SalaryForm = ({ form, taux, calc }) => {
       </button>
     </div>
   )
+}
+
+SalaryForm.propTypes = {
+  form: PropTypes.string.isRequired,
+  taux: PropTypes.number.isRequired,
+  calc: PropTypes.number.isRequired
 }
 
 export default SalaryForm
